@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="manifest" href="/manifest.json">
+
         {{-- Inline script to detect system dark mode preference and apply it immediately --}}
         <script>
             (function() {
@@ -46,5 +48,15 @@
     </head>
     <body class="font-sans antialiased">
         @inertia
+
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js')
+                        .then(registration => console.log('SW registered: ', registration))
+                        .catch(error => console.log('SW registration failed: ', error));
+                });
+            }
+        </script>
     </body>
 </html>

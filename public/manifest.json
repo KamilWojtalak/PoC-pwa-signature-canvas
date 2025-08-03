@@ -1,0 +1,17 @@
+{
+  "name": "PWA Signature Canvas",
+  "short_name": "SignatureCanvas",
+  "description": "App for capturing signatures using a canvas element in a Progressive Web App.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "166x166",
+      "type": "image/png"
+    }
+  ]
+}
