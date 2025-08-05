@@ -1,3 +1,3 @@
-# PoC signature canvas 
-
-Testing...  
+```
+npm install react-device-detect --save
+```
