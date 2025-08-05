@@ -1,3 +1,3 @@
 ```
-npm install react-device-detect --save
+sail npm install react-device-detect --save
 ```
